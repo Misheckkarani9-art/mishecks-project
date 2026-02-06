@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beddings</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+      <script src="dist/js/bootstrap.js"></script>
+      <link rel="stylesheet" href="style.css">
+     <style>
+             /* Footer */
+  footer { background:#222; color:#fff; padding:25px 15px; text-align:center;}
+  footer a { color:#8a2be2; margin:0 5px; transition:0.3s;}
+  footer a:hover { color:#f7b731;}
+  footer marquee { color:#f7b731; margin-top:10px; display:block;}
+        </style>
+ 
+         <style>
+  * { box-sizing: border-box; margin:0; padding:0; font-family: Arial,sans-serif;}
+  body { background:#f9f9f9; color:#333; line-height:1.6;}
+
+  /* Navbar */
+  nav { display:flex; justify-content:space-between; align-items:center; padding:15px 20px; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.1); position:sticky; top:0; z-index:100;}
+  .logo { font-size:1.8rem; font-weight:bold; color:#8a2be2; letter-spacing:2px;}
+  .nav-links { display:flex; gap:15px; align-items:center;}
+  .nav-links a { text-decoration:none; color:#333; padding:5px 10px; border-radius:5px; transition:0.3s;}
+  .nav-links a:hover { background:#8a2be2; color:#fff;}
+  .login-btn, .profile-btn, .cart-btn { padding:5px 12px; border:none; background:#8a2be2; color:#fff; border-radius:5px; cursor:pointer; transition:0.3s;}
+  .login-btn:hover, .profile-btn:hover, .cart-btn:hover { background:#6c1bbf;}
+
+  /* Hamburger */
+  .hamburger { display:none; flex-direction:column; cursor:pointer; gap:4px;}
+  .hamburger div { width:25px; height:3px; background:#333;}
+
+
+  /* Product Categories Buttons */
+  .product-categories { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:50px 20px;}
+  .category-btn { display:inline-block; padding:25px 35px; background:#8a2be2; color:#fff; font-size:1.2rem; border-radius:12px; text-decoration:none; transition:0.3s; text-align:center; width:180px;}
+  .category-btn:hover { background:#6c1bbf; transform:scale(1.05); }
+
+  /* Footer */
+  footer { background:#222; color:#fff; padding:25px 15px; text-align:center;}
+  footer a { color:#8a2be2; margin:0 5px; transition:0.3s;}
+  footer a:hover { color:#f7b731;}
+  footer marquee { color:#f7b731; margin-top:10px; display:block;}
+
+
+
+  /* Responsive */
+  @media(max-width:768px){ 
+    .nav-links { display:none; flex-direction:column; background:#fff; position:absolute; top:60px; right:0; width:200px; box-shadow:0 2px 8px rgba(0,0,0,0.2); border-radius:5px;}
+    .nav-links.active { display:flex;}
+    .hamburger { display:flex;}
+    .category-btn { width:45%; padding:20px; font-size:1rem;}
+  }
+ 
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="logo">METRO SALES</div>
+  <div class="hamburger" id="hamburger"><div></div><div></div><div></div></div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="help.html">Contact</a>
+   
+  </div>
+</nav>
+
+          <section class="text-danger" id="back2">
+            <h2 class="text-center "><b>WELCOME TO METRO SUPERMARKET</b></h2>
+            <h5 class="text-center">Where you can utilise your budget...... </h5>
+        </section>
+
+          <h2 class="text-center text-secondary"><b>DUVETS AT AFFORDABLE PRICES</b></h2>
+          <hr class="p-3" ><section class="row p-3 bg-dark">
+            <div class="col-lg-3 ">
+                <!-- below is the div carring the card and its content -->
+                <div class="card shadow text-">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>AMERICAN</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/duvet2.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                  <!-- below is the div with the footer section of  card -->
+                   <div class="card-footer">
+                       
+                        <b class="text-warning text-center">Ksh23,000</b> <br>
+
+                         <span class="badge bg-danger text-center">20 items left..</span>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3" >
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>FANTASTIC</b></div>
+
+                     <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/duvet9.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                    
+                    <b class="text-warning text-center">Ksh43,000</b> <br>
+
+                    <span class="badge bg-danger ">50 items left..</span>
+                </div>
+                     
+                 </div>
+
+                 
+            </div>
+             <div class="col-lg-3 ">
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>JAPAN</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/duvet1.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                    
+                    <b class="text-warning text-center">Ksh63,000</b> <br>
+
+                    <span class="badge bg-danger ">34 itens left..</span>
+                </div>
+                 </div>
+
+                
+            </div>
+            
+             <div class="col-lg-3 ">
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>THAILANDS</b></div>
+
+                     <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/duvet4.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                   
+                    <b class="text-warning text-center">Ksh38,000</b> <br>
+
+                    <span class="badge bg-danger ">49 items left..</span>
+                </div>
+                 </div>
+
+                 
+            </div><hr>
+                 <!-- 2div -->
+
+             <hr><div class="col-lg-3 ">
+                <!-- below is the div carring the card and its content -->
+                <div class="card shadow text-">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>AMERICAN</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/duvet8.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                  <!-- below is the div with the footer section of  card -->
+                   <div class="card-footer">
+                        
+                        <b class="text-warning text-center">Ksh23,000</b> <br>
+
+                         <span class="badge bg-danger text-center">20 items left..</span>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3" >
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>FANTASTIC</b></div>
+
+                     <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/duvet7.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                    
+                    <b class="text-warning text-center">Ksh43,000</b> <br>
+
+                    <span class="badge bg-danger ">50 items left..</span>
+                </div>
+                     
+                 </div>
+
+                 
+            </div>
+             <div class="col-lg-3 ">
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>JAPAN</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/duvet6.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                    
+                    <b class="text-warning text-center">Ksh63,000</b> <br>
+
+                    <span class="badge bg-danger ">34 itens left..</span>
+                </div>
+                 </div>
+
+                
+            </div>
+            
+             <div class="col-lg-3 ">
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>THAILANDS</b></div>
+
+                     <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/duvet5.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                   
+                    <b class="text-warning text-center">Ksh38,000</b> <br>
+
+                    <span class="badge bg-danger ">49 items left..</span>
+                </div>
+                 </div>
+
+                 
+            </div>
+             <a href="Laptops" class="text-end text-danger">See More..</a>
+        </section><br><br><hr>
+
+        <!-- second section starts here -->
+
+            <h2 class="text-center text-secondary"><b>COMFORTTABLE PILLOW AVAILABLE</b></h2>
+          <hr class="p-3" ><section class="row p-3 bg-dark">
+            <div class="col-lg-4 ">
+                <!-- below is the div carring the card and its content -->
+                <div class="card shadow text-">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>COMFY</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/piloow1.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                  <!-- below is the div with the footer section of  card -->
+                   <div class="card-footer">
+                       
+                        <b class="text-warning text-center">Ksh23,000</b> <br>
+
+                         <span class="badge bg-danger text-center">20 items left..</span>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4" >
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>FLUFFY</b></div>
+
+                     <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/pilow2.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                    
+                    <b class="text-warning text-center">Ksh43,000</b> <br>
+
+                    <span class="badge bg-danger ">50 items left..</span>
+                </div>
+                     
+                 </div>
+
+                 
+            </div>
+             <div class="col-lg-4 ">
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>BETTER</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/pilow3.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                    
+                    <b class="text-warning text-center">Ksh63,000</b> <br>
+
+                    <span class="badge bg-danger ">34 itens left..</span>
+                </div>
+                 </div>
+
+                
+            </div>
+            
+             
+             <a href="Laptops" class="text-end text-danger">See More..</a>
+        </section><br><br><hr>
+        <!-- second section ends here -->
+
+
+        <!-- third section starts here -->
+ 
+          <h2 class="text-center text-secondary"><b>CURTAINS AVAILABLE</b></h2>
+          <hr class="p-3" ><section class="row p-3 bg-dark">
+            <div class="col-lg-2">
+                <!-- below is the div carring the card and its content -->
+                <div class="card shadow text-">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>COMFY</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/curtain1.jpg" alt="" height="200PX" width="100%" id="hover"> 
+                  </div>
+                  <!-- below is the div with the footer section of  card -->
+                   <div class="card-footer">
+                        
+                        <b class="text-warning text-center">Ksh23,000</b> <br>
+
+                         <span class="badge bg-danger text-center">20 items left..</span>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-2" >
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>COOL</b></div>
+
+                     <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/curtain7.jpg" alt="" height="200PX" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                   
+                    <b class="text-warning text-center">Ksh43,000</b> <br>
+
+                    <span class="badge bg-danger ">50 items left..</span>
+                </div>
+                     
+                 </div>
+
+                 
+            </div>
+             <div class="col-lg-2 ">
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>COOL</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/curtain8.jpg" alt="" height="200PX" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                    
+                    <b class="text-warning text-center">Ksh63,000</b> <br>
+
+                    <span class="badge bg-danger ">34 itens left..</span>
+                </div>
+                 </div>
+
+                
+            </div>
+
+              <div class="col-lg-2 ">
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>JAPAN</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/curtain3.jpg" alt="" height="200PX" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                    
+                    <b class="text-warning text-center">Ksh63,000</b> <br>
+
+                    <span class="badge bg-danger ">34 itens left..</span>
+                </div>
+                 </div>
+
+                
+            </div>
+
+              <div class="col-lg-2 ">
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>JAPAN</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/curtain4r.jpg" alt="" height="200PX" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                    
+                    <b class="text-warning text-center">Ksh63,000</b> <br>
+
+                    <span class="badge bg-danger ">34 itens left..</span>
+                </div>
+                 </div>
+
+                
+            </div>
+
+              <div class="col-lg-2 ">
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>JAPAN</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/curtain5.jpg" alt="" height="200PX" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                   
+                    <b class="text-warning text-center">Ksh63,000</b> <br>
+
+                    <span class="badge bg-danger ">34 itens left..</span>
+                </div>
+                 </div>
+
+                
+            </div>
+            
+             
+             <a href="Laptops" class="text-end text-danger">See More..</a>
+        </section><br><br><hr>
+        <!-- third section ends here -->
+
+
+        <!-- section four starts here -->
+         
+          <h2 class="text-center text-secondary"><b>CARPETS AT AFFORDABLE PRICES</b></h2>
+          <hr class="p-3" ><section class="row p-3 bg-dark">
+            <div class="col-lg-3 ">
+                <!-- below is the div carring the card and its content -->
+                <div class="card shadow text-">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>AMERICAN</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/cxarpet1.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                  <!-- below is the div with the footer section of  card -->
+                   <div class="card-footer">
+                        
+                        <b class="text-warning text-center">Ksh23,000</b> <br>
+
+                         <span class="badge bg-danger text-center">20 items left..</span>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3" >
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>FANTASTIC</b></div>
+
+                     <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/carpet2.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                   
+                    <b class="text-warning text-center">Ksh43,000</b> <br>
+
+                    <span class="badge bg-danger ">50 items left..</span>
+                </div>
+                     
+                 </div>
+
+                 
+            </div>
+             <div class="col-lg-3 ">
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>JAPAN</b></div>
+
+                      <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/carpet3.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                   
+                    <b class="text-warning text-center">Ksh63,000</b> <br>
+
+                    <span class="badge bg-danger ">34 itens left..</span>
+                </div>
+                 </div>
+
+                
+            </div>
+            
+             <div class="col-lg-3 ">
+                <!-- below is the div carring the card and its content -->
+                 <div class="card shadow">
+                    <!-- below is the div with header section -->
+                     <div class="card-header text-center"><b>THAILANDS</b></div>
+
+                     <!-- beloow is div containing body section card -->
+                  <div class="card-body">
+                    <img src="beddings/carpet4.jpg" alt="" height="90%" width="100%" id="hover"> 
+                  </div>
+                <!-- below is the div with the footer section of  card -->
+                 <div class="card-footer">
+                    
+                    <b class="text-warning text-center">Ksh38,000</b> <br>
+
+                    <span class="badge bg-danger ">49 items left..</span>
+                </div>
+                 </div>
+
+                 
+            </div><hr>
+
+         </section><br><br><hr>
+        <!-- section four ends here -->
+
+         
+                    </div>
+                 </section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 misheck. All rights reserved.</p>
+  <p>created by misheck karani</p>
+  <p>Follow us: <a href="http://Facebook">Facebook</a> | <a href="http://Instagram">Instagram</a> | <a href="#">WhatsApp</a></p>
+  <marquee>Welcome to Metro – supermarket and elegance in every product!</marquee>
+</footer>
+        
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metros - Products</title>
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; font-family: Arial,sans-serif;}
+  body { background:#f9f9f9; color:#333; line-height:1.6;}
+
+  /* Navbar */
+  nav { display:flex; justify-content:space-between; align-items:center; padding:15px 20px; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.1); position:sticky; top:0; z-index:100;}
+  .logo { font-size:1.8rem; font-weight:bold; color:#8a2be2; letter-spacing:2px;}
+  .nav-links { display:flex; gap:15px; align-items:center;}
+  .nav-links a { text-decoration:none; color:#333; padding:5px 10px; border-radius:5px; transition:0.3s;}
+  .nav-links a:hover { background:#8a2be2; color:#fff;}
+  .login-btn, .profile-btn, .cart-btn { padding:5px 12px; border:none; background:#8a2be2; color:#fff; border-radius:5px; cursor:pointer; transition:0.3s;}
+  .login-btn:hover, .profile-btn:hover, .cart-btn:hover { background:#6c1bbf;}
+
+  /* Hamburger */
+  .hamburger { display:none; flex-direction:column; cursor:pointer; gap:4px;}
+  .hamburger div { width:25px; height:3px; background:#333;}
+
+
+  /* Product Categories Buttons */
+  .product-categories { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:50px 20px;}
+  .category-btn { display:inline-block; padding:25px 35px; background:#8a2be2; color:#fff; font-size:1.2rem; border-radius:12px; text-decoration:none; transition:0.3s; text-align:center; width:180px;}
+  .category-btn:hover { background:#6c1bbf; transform:scale(1.05); }
+
+  /* Footer */
+  footer { background:#222; color:#fff; padding:25px 15px; text-align:center;}
+  footer a { color:#8a2be2; margin:0 5px; transition:0.3s;}
+  footer a:hover { color:#f7b731;}
+  footer marquee { color:#f7b731; margin-top:10px; display:block;}
+
+
+
+  /* Responsive */
+  @media(max-width:768px){ 
+    .nav-links { display:none; flex-direction:column; background:#fff; position:absolute; top:60px; right:0; width:200px; box-shadow:0 2px 8px rgba(0,0,0,0.2); border-radius:5px;}
+    .nav-links.active { display:flex;}
+    .hamburger { display:flex;}
+    .category-btn { width:45%; padding:20px; font-size:1rem;}
+  }
+ 
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="logo">METRO SALES</div>
+  <div class="hamburger" id="hamburger"><div></div><div></div><div></div></div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="help.html">Contact</a>
+   
+  </div>
+</nav>
+
+
+<!-- Header -->
+<header>
+  <div>
+    <h1>Our Products</h1>
+    <p>Select a category to explore</p>
+  </div>
+</header>
+
+<!-- Product Categories -->
+<section class="product-categories">
+  <a href="Phones.html" class="category-btn">Phones</a>
+  <a href="beddings.html" class="category-btn">Beddings</a>
+  <a href="gallery.html" class="category-btn">Gallery</a>
+  <a href="computing.html" class="category-btn">Computing</a>
+  <a href="electronics.html" class="category-btn">Electronics</a>
+  <a href="fashion.html" class="category-btn">Fashion</a>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Violet. All rights reserved.</p>
+  <p>Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">WhatsApp</a></p>
+  <marquee>Welcome to Metro Luxury and elegance in every product!</marquee>
+</footer>
+
+
+
+</body>
+</html>

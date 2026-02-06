@@ -1,0 +1,33 @@
+   #hover:hover{
+            transform: scale(1.1);
+            transition: 3s;
+        }
+        #back2{
+            
+        }
+        #move{
+            transition: 3s;
+        }
+        #carol{
+            background-image: url(images2/Unleash\ the\ power\ \ Partnership\ negotiations\ and….jpg);
+        }
+        .body{
+            padding:40px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            
+        }
+        .body{
+            align-content: center;
+        }
+        
+        .end{
+            margin-left: 5px;
+        }
+        
+        #help{
+            background-image: url(images2/Unleash\ the\ power\ \ Partnership\ negotiations\ and….jpg);
+        }
+
+
+        
